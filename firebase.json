@@ -1,11 +1,26 @@
 {
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
-  "storage": {
-    "rules": "storage.rules"
-  },
+  "firestore": [
+    {
+      "target": "default",
+      "rules": "firestore.rules",
+      "indexes": "firestore.indexes.json"
+    },
+    {
+      "target": "test",
+      "rules": "firestore.rules",
+      "indexes": "firestore.indexes.json"
+    }
+  ],
+  "storage": [
+    {
+      "target": "default",
+      "rules": "storage.rules"
+    },
+    {
+      "target": "test",
+      "rules": "storage.rules"
+    }
+  ],
   "emulators": {
     "auth": {
       "port": 9099
@@ -29,18 +44,36 @@
       "enabled": true
     }
   },
-  "hosting": {
-    "public": "./dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "./dist/index.html"
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "target": "default",
+      "public": "./dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "./dist/index.html"
+        }
+      ]
+    },
+    {
+      "target": "test",
+      "public": "./dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "./dist/index.html"
+        }
+      ]
+    }
+  ]
 }
