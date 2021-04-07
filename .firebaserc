@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "vue-app-dc2e8",
+    "test": "vue-app-test-8eb50"
+  }
+}
