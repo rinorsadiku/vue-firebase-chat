@@ -13,7 +13,6 @@
     </User>
   </div>
 </template>
-
 <script>
 import Login from "./Login";
 import User from "./User";
