@@ -2,19 +2,5 @@
   "projects": {
     "default": "vue-app-dc2e8",
     "test": "vue-app-test-8eb50"
-  },
-  "targets": {
-    "vue-app-test-8eb50": {
-      "hosting": {
-        "test": [
-          "vue-app-test-8eb50"
-        ]
-      },
-      "storage": {
-        "test": [
-          "gs://vue-app-test-8eb50.appspot.com"
-        ]
-      }
-    }
   }
 }
