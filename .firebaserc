@@ -2,5 +2,14 @@
   "projects": {
     "default": "vue-app-dc2e8",
     "test": "vue-app-test-8eb50"
+  },
+  "targets": {
+    "vue-app-test-8eb50": {
+      "hosting": {
+        "default": [
+          "vue-app-test-8eb50"
+        ]
+      }
+    }
   }
 }
